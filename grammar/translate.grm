@@ -1,0 +1,15 @@
+# Make symbolic "$" replace to "empty set"
+
+expr -> term rest
+rest -> + term { print('+') } rest | - term { print('-') } rest | $
+term -> 0 { print('0') } 
+term -> 1 { print('1') }
+term -> 2 { print('2') }
+term -> 3 { print('3') }
+term -> 4 { print('4') }
+term -> 5 { print('5') }
+term -> 6 { print('6') }
+term -> 7 { print('7') }
+term -> 8 { print('8') }
+term -> 9 { print('9') }
+
